@@ -9,6 +9,7 @@ Let's face it, regex is hard. So avoid using them whenever possible. Just to nam
 - **Validating dates:** see this [Stack Overflow thread](http://stackoverflow.com/questions/19271381/correctly-determine-if-date-string-is-a-valid-date-in-that-format)
 - **Parsing JSON:** use [`json_decode()`](http://php.net/json_decode)
 - **Parsing HTML / XML:** use a dedicated parser. See [*How do you parse and process HTML/XML in PHP?*](http://stackoverflow.com/questions/3577641/how-do-you-parse-and-process-html-xml-in-php)
+- **Parsing CSV:** use [`str_getcsv()`](http://php.net/manual/en/function.str-getcsv.php) or [`fgetcsv()`](http://php.net/manual/en/function.fgetcsv.php)
 - **Parsing complex grammars:** there's almost always a dedicated parser for your favourite language
 - **Check if string contains substring:** use [`strpos`](http://php.net/strpos) or [`stripos`](http://php.net/stripos)
 
