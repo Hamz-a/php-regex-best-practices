@@ -17,4 +17,4 @@ A few other cases you *might* consider avoiding:
 - **Name validation:** read about [*Falsehoods Programmers Believe About Names*](http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/)
 - **Address validation:** read about [*Falsehoods programmers believe about addresses*](https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/)
 
-**\*** It might not work with internationalized domains and email addresses. See [top comments](https://secure.php.net/manual/en/function.filter-var.php#111828) at the documentation.
+\* It might not work with internationalized domains and email addresses. See [top comments](https://secure.php.net/manual/en/function.filter-var.php#111828) at the documentation.
