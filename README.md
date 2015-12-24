@@ -9,3 +9,9 @@ This project is a work in progress. Also feel free to contribute.
 3. [A note on security](A note on security.md)
 4. [Comments](Comments.md)
 5. [Pattern modifiers](Pattern modifiers.md)
+
+## Contributors
+
+Special thanks to:
+
+- [nhahtdh](http://stackoverflow.com/users/1400768/nhahtdh)
