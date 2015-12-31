@@ -53,3 +53,35 @@ preg_match_all($regex, $input,$m);
 ```
 
 We used the nowdoc string syntax but we could also have used a heredoc. [Read the difference from the manual](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc).
+
+## Know what should and shouldn't be escaped
+
+A lot of times, I see characters being escaped which are not required to escape. Resulting into a mess:
+
+```php
+// Mess
+$regex = '~\>\>user\d+\,\ \"\d+\-\d+\"~';
+
+// Clean
+$regex = '~>>user\d+, "\d+-\d+"~';
+```
+
+Check out the following cases where you do not need to escape:
+
+- The following characters `<>@!#~=_,'"` if they aren't used as delimiters
+	- `/<>@!#~=_,'"/` will match `<>@!#~=_,'"`
+- Spaces if you're not using the `x` modifier
+	- `/ +/` will match one or more space (`/[ ]+/` is clearer though)
+- Hyphens outside of character classes
+	- `/-+/` will match one or more hyphens
+- Hyphens inside a character class at the beginning or at the end:
+	- `/[a-z-]+/` will match a range of letters from "a" to "z" including a hyphen. Example: `abcde-fgh`
+	- `/[-a-z]+/` same as above
+- A dot inside a character class loses its meaning
+	- `/[.]/` will match a single literal dot
+- Actually any regex character inside a character class loses its meaning
+	- `/[|+*?{}()]/` will match any one of those characters `|+*?{}()` 
+- Be careful though with square brackets, it might be best to escape them to avoid confusion
+	- `/[[]/` will match `[`
+	- `/[][]/` will match either `[` or `]`
+	- `/[]abc[]/` will match either `[`, `]`, `a`, `b` or `c`
