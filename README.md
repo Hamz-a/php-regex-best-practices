@@ -9,6 +9,7 @@ This project is a work in progress. Also feel free to contribute.
 3. [A note on security](A note on security.md)
 4. [Comments](Comments.md)
 5. [Pattern modifiers](Pattern modifiers.md)
+6. [Escaping a backslash hell](Escaping a backslash hell.md)
 
 ## Contributors
 
