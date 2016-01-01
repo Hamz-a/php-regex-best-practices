@@ -94,3 +94,7 @@ $regex = '/' . preg_quote($user_input, '/') . '\d+/';
 ##[`preg_last_error()`](http://php.net/manual/en/function.preg-last-error.php)
 
 This function might come handy for debugging purposes. It will return the error code of the last PCRE regex execution. Someone has written a [nice function](http://php.net/manual/en/function.preg-last-error.php#112449) to convert the error code to actual text.
+
+
+
+<p align="center"> [<< previous](01 Avoid using regex whenever possible.md) | [next >>](03 A note on security.md)</p>

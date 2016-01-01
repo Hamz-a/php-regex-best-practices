@@ -18,3 +18,6 @@ A few other cases you *might* consider avoiding:
 - **Address validation:** read about [*Falsehoods programmers believe about addresses*](https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/)
 
 \* It might not work with internationalized domains and email addresses. See [top comments](https://secure.php.net/manual/en/function.filter-var.php#111828) at the documentation.
+
+
+<p align="center"> [next >>](02 Get to know the available php regex functions.md)</p>

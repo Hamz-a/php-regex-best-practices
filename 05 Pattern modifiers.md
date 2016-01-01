@@ -84,3 +84,5 @@ Recommended readings:
 
  - [UTF-8 all the way through MySQL, PHP, and HTML](http://stackoverflow.com/questions/279170/utf-8-all-the-way-through-mysql-php-and-html)
  - [Handling Unicode Front To Back In A Web App](http://kunststube.net/frontback/)
+ 
+<p align="center"> [<< previous](04 Comments.md) | [next >>](06 Escaping a backslash hell.md)</p>

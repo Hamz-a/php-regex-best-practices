@@ -85,3 +85,6 @@ Check out the following cases where you do not need to escape:
 	- `/[[]/` will match `[`
 	- `/[][]/` will match either `[` or `]`
 	- `/[]abc[]/` will match either `[`, `]`, `a`, `b` or `c`
+    
+    
+<p align="center"> [<< previous](05 Pattern modifiers.md) | [next >>](07 Writing modular regexes.md)</p>

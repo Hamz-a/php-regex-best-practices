@@ -47,3 +47,6 @@ Fixing this is easy using [`preg_quote()`](http://php.net/manual/en/function.pre
 $regex = '/' . preg_quote($input, '/') . '(?=.*?look)/';
 ```
 Don't forget to specify the second parameter which stands for the delimiter that should be escaped as well.
+
+
+<p align="center"> [<< previous](02 Get to know the available php regex functions.md) | [next >>](04 Comments.md)</p>
