@@ -33,7 +33,6 @@ $output = preg_replace_callback('/\{(.*?)\}/', function($m) {
 echo $output; // PHPINFO()
 ```
 
-------
 
 ##Dangerous wild input
 
