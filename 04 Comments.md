@@ -30,4 +30,4 @@ There are several ways, I will show two of them. Say I want to match one or more
 That said, regardless of the `x` modifier, I would always enclose the space in a character class. It's clear that way.
 
 
-<p align="center"> [<< previous](03 A note on security.md) | [next >>](05 Pattern modifiers.md)</p>
+### [<< previous](03 A note on security.md) | [next >>](05 Pattern modifiers.md)

@@ -39,4 +39,4 @@ If you want to read about the DEFINE construct. Check out this [StackOverflow an
 
 
 
-<p align="center"> [<< previous](06 Escaping a backslash hell.md)</p>
+### [<< previous](06 Escaping a backslash hell.md)

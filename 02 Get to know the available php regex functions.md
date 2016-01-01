@@ -97,4 +97,4 @@ This function might come handy for debugging purposes. It will return the error 
 
 
 
-<p align="center"> [<< previous](01 Avoid using regex whenever possible.md) | [next >>](03 A note on security.md)</p>
+### [<< previous](01 Avoid using regex whenever possible.md) | [next >>](03 A note on security.md)
