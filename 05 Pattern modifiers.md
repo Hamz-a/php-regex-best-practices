@@ -76,7 +76,7 @@ If you don't know about greediness. Read this [StackOverflow answer](http://stac
 
 ## `u` modifier
 
-Lower case letter `u`. If this modifier is set, the input string and regex are treated as UTF-8. This means whenever you're working with UTF-8 strings, you should enable this modifier. There are some quirks, see the comments from the manual [#54805](http://php.net/manual/en/reference.pcre.pattern.modifiers.php#54805) and [#103348](http://php.net/manual/en/reference.pcre.pattern.modifiers.php#103348).
+Lower case letter `u`. If this modifier is set, the input string and regex are treated as UTF-8. This means whenever you're working with UTF-8 strings, you should enable this modifier. This means that both input and pattern must be *valid* UTF-8 strings. Which means it can't be used to extract text out of an arbitrary binary string which contains UTF-8 strings.
 
 I would recommend enabling this modifier unless you're absolutely sure that you will be working with ASCII (or single-byte character sets). Note that shorthand character classes like `\w`, `\d`, `\s`, `\b`, ... will become Unicode aware when this modifier is set.
 
