@@ -79,7 +79,7 @@ Check out the following cases where you do not need to escape:
 	- `/[-a-z]+/` same as above
 - A dot inside a character class loses its meaning
 	- `/[.]/` will match a single literal dot
-- Actually any regex character inside a character class loses its meaning
+- Actually most regex characters inside a character class loses its meaning, be careful of the hyphen and square brackets since their position in the character class might decide their meaning
 	- `/[|+*?{}()]/` will match any one of those characters `|+*?{}()` 
 - Be careful though with square brackets, it might be best to escape them to avoid confusion
 	- `/[[]/` will match `[`
