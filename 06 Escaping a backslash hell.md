@@ -14,15 +14,15 @@ $regex = '/^\/user\/(\d+)\/?/i';
 $regex = '~^/user/(\d+)/?~i';
 ```
 
-Other common delimiters are `#`, `!`, `%`. Keep in mind to use one that's less likely to be included in your regex.
+Other common delimiters are `#`, `!`, `%`, `_`, `;`. Keep in mind to use one that's less likely to be included in your regex. For example `#` might be used in `x` mode for comments or when you simply have a regex with one of those characters included.
 
-One not so well known but interesting way is to use `()` as delimiters:
+One not so well known but interesting way is to use an assymetric pair of delimiters such as `()`:
 
 ```php
 $regex = '(^/user/(\d+)/?)i';
 ```
 
-Notice that you don't need to escape the brackets inside the regex. You could see the first braces as "group 0" and the second (inner braces) as group 1.
+Notice that you don't need to escape the brackets inside the regex. You could see the first braces as "group 0" and the second (inner braces) as group 1. However, the opinions are divided about it's usage. Some would endorse it and some would avoid it as it might seem confusing.
 
 
 ## Choosing the right quotes
@@ -53,6 +53,8 @@ preg_match_all($regex, $input,$m);
 ```
 
 We used the nowdoc string syntax but we could also have used a heredoc. [Read the difference from the manual](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc).
+
+Don't forget that double quoted strings have [a special power in php](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.double) which means it might interfer with the regex. Also consider another factor which is consistency.
 
 ## Know what should and shouldn't be escaped
 
