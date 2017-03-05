@@ -95,6 +95,7 @@ $regex = '/' . preg_quote($user_input, '/') . '\d+/';
 
 This function might come handy for debugging purposes. It will return the error code of the last PCRE regex execution. Someone has written a [nice function](http://php.net/manual/en/function.preg-last-error.php#112449) to convert the error code to actual text.
 
+Since we're talking about errors and debugging, you might as well want to check the return value of the used function. The meaning might vary. For example `preg_match()`, `preg_match_all()`, `preg_split()` returns `false` on error while `preg_replace()` returns `NULL` on error. Always consult the documentation.
 
 
 ### [<< previous](01 Avoid using regex whenever possible.md) | [next >>](03 A note on security.md)
