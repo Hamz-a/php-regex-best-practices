@@ -22,7 +22,7 @@ One not so well known but interesting way is to use an assymetric pair of delimi
 $regex = '(^/user/(\d+)/?)i';
 ```
 
-Notice that you don't need to escape the brackets inside the regex. You could see the first braces as "group 0" and the second (inner braces) as group 1. However, the opinions are divided about it's usage. Some would endorse it and some would avoid it as it might seem confusing.
+Notice that you don't need to escape the brackets inside the regex. You could see the first braces as "group 0" and the second (inner braces) as group 1. However, the opinions are divided about its usage. Some would endorse it and some would avoid it as it might seem confusing.
 
 
 ## Choosing the right quotes
