@@ -2,7 +2,7 @@
 
 I've seen a lot of cases where people don't seem to be aware of functions other than the classical `preg_match()` and `preg_replace()`. Below we'll cover some use cases:
 
-##[`preg_split()`](http://php.net/manual/en/function.preg-split.php)
+##[`preg_split()`](https://php.net/manual/en/function.preg-split.php)
 
 Sometimes you want splitting instead of matching. Instead of writing the following code:
 ```php
@@ -21,7 +21,7 @@ $output = preg_split('/_+/', $input);
 print_r($output);
 ```
 
-##[`preg_grep()`](http://php.net/manual/en/function.preg-grep.php)
+##[`preg_grep()`](https://php.net/manual/en/function.preg-grep.php)
 
 Say you want to loop through an array and try to match values against a specific regex. I've seen people trying:
 
@@ -45,7 +45,7 @@ The only thing you need to take into account is that it returns an array indexed
 
 
 
-##[`preg_filter()`](http://php.net/manual/en/function.preg-filter.php)
+##[`preg_filter()`](https://php.net/manual/en/function.preg-filter.php)
 
 Per the documentation:
 
@@ -54,7 +54,7 @@ Per the documentation:
 In essence, this is the same as `preg_grep()` but with a replace option.
 
 
-##[`preg_replace_callback()`](http://php.net/manual/en/function.preg-replace-callback.php)
+##[`preg_replace_callback()`](https://php.net/manual/en/function.preg-replace-callback.php)
 
 Sometimes you don't want a simple replace. This function let's you use a function as callback. Say we want to match some words and convert them to upper case:
 
@@ -69,7 +69,7 @@ We'll cover more `preg_replace_callback()` tricks in another chapter.
 
 
 
-##[`preg_quote()`](http://php.net/manual/en/function.preg-quote.php)
+##[`preg_quote()`](https://php.net/manual/en/function.preg-quote.php)
 
 Sometimes we want to include dynamic user input into our regex. For example: search for a sequence chosen by the user followed by digits. The code would look roughly like this:
 
@@ -91,11 +91,11 @@ $regex = '/' . preg_quote($user_input, '/') . '\d+/';
 ```
 
 
-##[`preg_last_error()`](http://php.net/manual/en/function.preg-last-error.php)
+##[`preg_last_error()`](https://php.net/manual/en/function.preg-last-error.php)
 
-This function might come handy for debugging purposes. It will return the error code of the last PCRE regex execution. Someone has written a [nice function](http://php.net/manual/en/function.preg-last-error.php#112449) to convert the error code to actual text.
+This function might come handy for debugging purposes. It will return the error code of the last PCRE regex execution. Someone has written a [nice function](https://php.net/manual/en/function.preg-last-error.php#112449) to convert the error code to actual text.
 
 Since we're talking about errors and debugging, you might as well want to check the return value of the used function. The meaning might vary. For example `preg_match()`, `preg_match_all()`, `preg_split()` returns `false` on error while `preg_replace()` returns `NULL` on error. Always consult the documentation.
 
 
-### [<< previous](01 Avoid using regex whenever possible.md) | [next >>](03 A note on security.md)
+### [<< previous](01%20Avoid%20using%20regex%20whenever%20possible.md) | [next >>](03%20A%20note%20on%20security.md)

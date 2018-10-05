@@ -20,4 +20,4 @@ A few other cases you *might* consider avoiding:
 \* It might not work with internationalized domains and email addresses. See [top comments](https://secure.php.net/manual/en/function.filter-var.php#111828) at the documentation.
 
 
-### [next >>](02 Get to know the available php regex functions.md)
+### [next >>](02%20Get%20to%20know%20the%20available%20php%20regex%20functions.md)

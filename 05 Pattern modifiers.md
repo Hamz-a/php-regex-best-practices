@@ -1,6 +1,6 @@
 # Pattern modifiers
 
-PHP regex has a lot of modifiers. It even has modifiers that are non-existant in PCRE! Therefore I would highly recommend to read about them if you aren't familiar with them. [See the documentation page](http://php.net/manual/en/reference.pcre.pattern.modifiers.php)
+PHP regex has a lot of modifiers. It even has modifiers that are non-existant in PCRE! Therefore I would highly recommend to read about them if you aren't familiar with them. [See the documentation page](https://php.net/manual/en/reference.pcre.pattern.modifiers.php)
 
 A general advice would be to use modifiers only when you're convinced it should be there. I have seen a lot of people adding random modifiers without knowing exactly what it does. It works but when it needs an update they wonder why it's so complicated.
 
@@ -72,7 +72,7 @@ Upper case letter `u`. Quoting from the documentation:
 
 I would highly recommend **not using** this modifier. It only creates chaos and confusion. Do you want non-greedy/lazy/reluctant behaviour? Then be explicit about it and add `?`.
 
-If you don't know about greediness. Read this [StackOverflow answer](http://stackoverflow.com/questions/3075130/difference-between-and-for-regex/3075532#3075532).
+If you don't know about greediness. Read this [StackOverflow answer](https://stackoverflow.com/questions/3075130/difference-between-and-for-regex/3075532#3075532).
 
 ## `u` modifier
 
@@ -82,9 +82,9 @@ I would recommend enabling this modifier unless you're absolutely sure that you 
 
 Recommended readings:
 
- - [UTF-8 all the way through MySQL, PHP, and HTML](http://stackoverflow.com/questions/279170/utf-8-all-the-way-through-mysql-php-and-html)
- - [Handling Unicode Front To Back In A Web App](http://kunststube.net/frontback/)
+ - [UTF-8 all the way through MySQL, PHP, and HTML](https://stackoverflow.com/questions/279170/utf-8-all-the-way-through-mysql-php-and-html)
+ - [Handling Unicode Front To Back In A Web App](https://kunststube.net/frontback/)
  
  
  
-### [<< previous](04 Comments.md) | [next >>](06 Escaping a backslash hell.md)
+### [<< previous](04%20Comments.md) | [next >>](06%20Escaping%20a%20backslash%20hell.md)

@@ -1,6 +1,6 @@
 # Comments
 
-We always advise to write documented code. So why should we ignore this when writing regexes?  There are several techniques to document your regex. Using eXtended mode is the recommended way. I took the regex from this [StackOverflow answer](http://stackoverflow.com/a/3802238) to demonstrate this method.
+We always advise to write documented code. So why should we ignore this when writing regexes?  There are several techniques to document your regex. Using eXtended mode is the recommended way. I took the regex from this [StackOverflow answer](https://stackoverflow.com/a/3802238) to demonstrate this method.
 
 ## eXtended mode
 
@@ -30,4 +30,4 @@ There are several ways, I will show two of them. Say I want to match one or more
 That said, regardless of the `x` modifier, I would always enclose the space in a character class. It's clear that way.
 
 
-### [<< previous](03 A note on security.md) | [next >>](05 Pattern modifiers.md)
+### [<< previous](03%20A%20note%20on%20security.md) | [next >>](05%20Pattern%20modifiers.md)

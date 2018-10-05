@@ -35,8 +35,8 @@ regex;
 
 We first have a bunch of definitions and then we use one of those definitions in our pattern. For some reason you must change the regex so that an id must be alphanumeric instead of digits, support other protocols or change the domain. You name it. You would only need to change that specific definition instead of rewriting a complete regex.
 
-If you want to read about the DEFINE construct. Check out this [StackOverflow answer](http://stackoverflow.com/a/18151617)
+If you want to read about the DEFINE construct. Check out this [StackOverflow answer](https://stackoverflow.com/a/18151617)
 
 
 
-### [<< previous](06 Escaping a backslash hell.md)
+### [<< previous](06%20Escaping%20a%20backslash%20hell.md)

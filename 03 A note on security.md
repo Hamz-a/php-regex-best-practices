@@ -21,7 +21,7 @@ $output = preg_replace('/\{(.*?)\}/e', 'strtoupper($1)', $input);
 ```
 No wonder it got *deprecated* as of PHP 5.5 and *removed* from PHP 7.
 
-The solution would be to use [`preg_replace_callback()`](http://php.net/manual/en/function.preg-replace-callback.php) instead:
+The solution would be to use [`preg_replace_callback()`](https://php.net/manual/en/function.preg-replace-callback.php) instead:
 
 ```php
 $input = '{phpinfo()}';
@@ -41,7 +41,7 @@ Sometimes we need to include user input into our regex:
 $regex = '/' . $input . '(?=.*?look)/';
 ```
 but what if a malicious user tried to perform a [ReDOS](https://en.wikipedia.org/wiki/ReDoS) by injecting a special crafted regex sequence?
-Fixing this is easy using [`preg_quote()`](http://php.net/manual/en/function.preg-quote.php) to escape those regex sequences!
+Fixing this is easy using [`preg_quote()`](https://php.net/manual/en/function.preg-quote.php) to escape those regex sequences!
 
 ```php
 $regex = '/' . preg_quote($input, '/') . '(?=.*?look)/';
@@ -49,4 +49,4 @@ $regex = '/' . preg_quote($input, '/') . '(?=.*?look)/';
 Don't forget to specify the second parameter which stands for the delimiter that should be escaped as well.
 
 
-### [<< previous](02 Get to know the available php regex functions.md) | [next >>](04 Comments.md)
+### [<< previous](02%20Get%20to%20know%20the%20available%20php%20regex%20functions.md) | [next >>](04%20Comments.md)

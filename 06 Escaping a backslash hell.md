@@ -52,9 +52,9 @@ regex;
 preg_match_all($regex, $input,$m);
 ```
 
-We used the nowdoc string syntax but we could also have used a heredoc. [Read the difference from the manual](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc).
+We used the nowdoc string syntax but we could also have used a heredoc. [Read the difference from the manual](https://php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc).
 
-Don't forget that double quoted strings have [a special power in php](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.double) which means it might interfer with the regex. Also consider another factor which is consistency.
+Don't forget that double quoted strings have [a special power in php](https://php.net/manual/en/language.types.string.php#language.types.string.syntax.double) which means it might interfer with the regex. Also consider another factor which is consistency.
 
 ## Know what should and shouldn't be escaped
 
@@ -89,4 +89,4 @@ Check out the following cases where you do not need to escape:
 	- `/[]abc[]/` will match either `[`, `]`, `a`, `b` or `c`
     
     
-### [<< previous](05 Pattern modifiers.md) | [next >>](07 Writing modular regexes.md)
+### [<< previous](05%20Pattern%20modifiers.md) | [next >>](07%20Writing%20modular%20regexes.md)
