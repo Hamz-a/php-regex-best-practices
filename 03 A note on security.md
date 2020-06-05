@@ -2,7 +2,7 @@
 
 There's almost always an aspect of security when writing code. The same goes when using regex. Let's list a few issues:
 
-##The "e" modifier
+## The "e" modifier
 
 the "e" stands for ~~evil~~ eval.  When using using it with `preg_replace()` it will perform a regex substitution and evaluate it as PHP code:
 
@@ -34,7 +34,7 @@ echo $output; // PHPINFO()
 ```
 
 
-##Dangerous wild input
+## Dangerous wild input
 
 Sometimes we need to include user input into our regex:
 ```php
